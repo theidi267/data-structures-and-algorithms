@@ -14,3 +14,7 @@
 ## Solution
 
 ![whiteboard1](/assets/array_reverse.jpg)
+
+## Collaboration
+
+  On this lab, we worked with Jen
