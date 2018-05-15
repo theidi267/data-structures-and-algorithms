@@ -2,7 +2,7 @@
 
 let newArray = [];
 
-reverseArray(array) {
+function reverseArray(array) {
 
   for (var i=array.length -1; i>=0; i--){
 
