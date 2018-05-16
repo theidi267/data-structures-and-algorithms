@@ -32,4 +32,4 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Collaboration
 
-  On this lab, we worked with Jen and also thank you Justin for the help
+  On this lab, we worked with Jen and also thanks tos Justin for the help
