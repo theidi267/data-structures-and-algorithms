@@ -19,4 +19,5 @@ function insertShiftArray(arr, n) {
     return newArr;
    }
    
-   insertShiftArray([1,2,3], 5);
+module.exports = insertShiftArray;
+

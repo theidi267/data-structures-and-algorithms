@@ -1,0 +1,25 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return the provided array argument with elements in reversed order.",
+  "main": "array_reverse.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "tests-watch": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theidi267/data-structures-and-algorithms.git"
+  },
+  "author": "Timea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theidi267/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/theidi267/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
+  }
+}
