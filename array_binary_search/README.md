@@ -9,7 +9,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ## Solution
 
-![whiteboard3](/assets/array_binary.jpg)
+![whiteboard3](/assets/binary.jpg)
 
 ##Test
 
