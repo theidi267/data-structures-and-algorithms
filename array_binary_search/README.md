@@ -11,5 +11,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ![whiteboard3](/assets/array_binary.jpg)
 
+##Test
 
+tests have not been run yet
 
