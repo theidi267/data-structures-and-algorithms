@@ -27,8 +27,8 @@ head -> [1] -> [3] -> [2] -> X	4, 5	Exception
 
 ## Solution
 
-![whiteboard5](/assets/pseudo.jpg)
-![whiteboard5](/assets/code.jpg)
+![whiteboard5](assets/pseudo.jpg)
+![whiteboard5](assets/code.jpg)
 
 
 
