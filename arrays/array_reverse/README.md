@@ -11,7 +11,7 @@
 
 ## Solution
 
-![whiteboard1](/assets/array_reverse.jpg)
+![whiteboard1](assets/array_reverse.jpg)
 
 ## Collaboration
 
