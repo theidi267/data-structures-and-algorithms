@@ -9,7 +9,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Solution
 
-![whiteboard2](/assets/array_shift.jpg)
+![whiteboard2](assets/array_shift.jpg)
 
 ## Collaboration
 
