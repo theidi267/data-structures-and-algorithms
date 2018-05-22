@@ -22,16 +22,16 @@ class LinkedList {
   }
 
   insertBefore(value, newValue){
+    let newNode = newValue
     if(this.head === value){
       this.head = this.head.next;
-      value = this.head;
+      newNalue = this.head;
     }
     let prevNode = this.head;
     let currentNode = this.head.next;
-    while(currentNode){
-      if (currentNode === value){
-        newValue.next = currentNode.next;
-        prevNode.next = newValue;
+    while(currentNode.next){
+      if (currentNode.value === value){
+        newNode.next = currentNode.next;
       }
       break;
     }
@@ -40,11 +40,12 @@ class LinkedList {
 
   insertAfter(value, newValue){
     let currentNode = this.head;
-    let nextNode = this.head.next;
-    while(currentNode){
+    let nextNode = currentNode.next;
+    let newNode = newValue;
+    while(currentNode.next){
       if(currentNode.value === value){
-        currentNode.next = newValue;
-        newValue.next = nextNode;
+        currentNode.next = newNode;
+        newNode.next = nextNode;
       }
       break;
     }
