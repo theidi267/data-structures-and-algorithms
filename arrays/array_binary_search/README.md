@@ -9,9 +9,9 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ## Solution
 
-![whiteboard3](/assets/binary.jpg)
+![whiteboard3](assets/binary.jpg)
 
-##Test
+## Test
 
 tests have not been run yet
 
