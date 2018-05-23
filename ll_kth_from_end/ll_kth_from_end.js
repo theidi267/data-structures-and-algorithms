@@ -1,4 +1,4 @@
-kthFromEnd(k) {
+function kthFromEnd(k) {
   var index = this.length-1;
   var current = this.head;
   var previous = null;
