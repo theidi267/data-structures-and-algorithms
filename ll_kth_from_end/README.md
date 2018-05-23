@@ -14,4 +14,5 @@ Examples:
 
 ## Collaboration
 
-  On this lab, we worked with Jen and Ovi
+On this lab, we worked with Jen and Ovi
+
