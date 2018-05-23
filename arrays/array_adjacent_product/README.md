@@ -15,8 +15,8 @@ Adjacent values might be horizontally, vertically, or diagonally connected.
 
 ## Solution
 
-![whiteboard4](/assets/pseudo.jpg)
-![whiteboard4](/assets/code.jpg)
+![whiteboard4](assets/pseudo.jpg)
+![whiteboard4](assets/code.jpg)
 
 tried to resize pictures but mac is dumb
 
