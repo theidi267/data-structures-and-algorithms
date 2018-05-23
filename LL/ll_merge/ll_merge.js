@@ -1,0 +1,15 @@
+'use strict'
+
+function mergeList(ll1, ll2) {
+  var LLcoolJ = new LL();
+  var currentNode1 = ll1.head;
+  var currentNode2 = ll2.head;
+
+  while (currentNode1 || currentNode2) {
+    LLcoolJ.append(currentNode1);
+     currentNode1 = currentNode1.next 
+   LLcoolJ.append(currentNode2);
+     currentNode2 = currentNode2.next    
+  }
+  return LLcoolJ
+ } 
