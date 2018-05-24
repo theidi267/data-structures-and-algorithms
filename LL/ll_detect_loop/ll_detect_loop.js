@@ -6,7 +6,7 @@ function hasLoop(){
       current1 = this.head,
       current2 = this.head;
 
-  while(current1.next){
+  while(current2.next){
     current1 = current1.next;
     current2 = current2.next.next;
 
