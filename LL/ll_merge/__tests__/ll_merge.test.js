@@ -19,23 +19,19 @@ class LinkedList {
     }
   }
   
-  kthFromEnd(k) {
-   var index = this.length-1;
-   var current = this.head;
-   var previous = null;
+  mergeList(LL1, LL2) {
+   var LLcoolJ = new LL();
+   var currentNode1 = LL1.head;
+   var currentNode2 = LL2.head;
 
-   while (current) {
-     if (k === index) {
-         console.log(`found it: ${current.value}`);
-         return current;
-     }
-     var next = current.next;
-     current.next = previous;
-     previous = current;
-     current = next;
-     index--;
+   while (currentNode1 || currentNode2) {
+     LLcoolJ.append(currentNode1);
+      currentNode1 = currentNode1.next 
+    LLcoolJ.append(currentNode2);
+      currentNode2 = currentNode2.next    
    }
- }
+   return LLcoolJ
+  } 
 }
 
 class Node {
