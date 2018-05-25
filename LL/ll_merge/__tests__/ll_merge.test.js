@@ -28,8 +28,8 @@ class LinkedList {
 
     while (current) {
       if (k === index) {
-          console.log(`found it: ${current.value}`);
-          return current;
+        console.log(`found it: ${current.value}`);
+        return current;
       }
       var next = current.next;
       current.next = previous;

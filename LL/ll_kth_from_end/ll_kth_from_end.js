@@ -1,3 +1,5 @@
+'use strict';
+
 function kthFromEnd(k) {
   var index = this.length-1;
   var current = this.head;
@@ -5,8 +7,8 @@ function kthFromEnd(k) {
 
   while (current) {
     if (k === index) {
-        console.log(`found it: ${current.value}`);
-        return current;
+      console.log(`found it: ${current.value}`);
+      return current;
     }
     var next = current.next;
     current.next = previous;
@@ -15,3 +17,5 @@ function kthFromEnd(k) {
     index--;
   }
 }
+
+kthFromEnd();
