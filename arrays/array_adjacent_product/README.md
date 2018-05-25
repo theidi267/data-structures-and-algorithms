@@ -1,4 +1,5 @@
-# Shift Array
+# 2D Array highest adjecent value
+
 ## Challenge
 
 Write a function called LargestProduct which takes in a 2D array, of arbitrary size.
@@ -7,7 +8,7 @@ Adjacent values might be horizontally, vertically, or diagonally connected.
 
   [ 
     [ 1, 2, 1 ], 
-    [ 2, 4, 2 ], 
+    [ 2, 4, 2 ],     --> 56
     [ 3, 6, 8 ], 
     [ 7, 8, 1 ] 
   ]
