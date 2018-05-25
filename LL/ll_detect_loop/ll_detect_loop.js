@@ -3,8 +3,8 @@
 function hasLoop(){
 
   var isloop = false,
-      current1 = this.head,
-      current2 = this.head;
+    current1 = this.head,
+    current2 = this.head;
 
   while(current2.next){
     current1 = current1.next;
@@ -16,3 +16,4 @@ function hasLoop(){
   }
   return isloop;
 }
+hasLoop();
