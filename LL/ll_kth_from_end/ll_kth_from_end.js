@@ -18,4 +18,5 @@ function kthFromEnd(k) {
   }
 }
 
-kthFromEnd();
+
+module.exports = kthFromEnd;
