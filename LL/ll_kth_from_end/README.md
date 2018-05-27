@@ -5,12 +5,12 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 
 Examples:
 
-![whiteboard1](assets/example.png)
+![whiteboard7](assets/example.png)
 
 
 ## Solution
 
-![whiteboard1](assets/whiteboard7.jpg)
+![whiteboard7](assets/whiteboard7.jpg)
 
 ## Collaboration
 

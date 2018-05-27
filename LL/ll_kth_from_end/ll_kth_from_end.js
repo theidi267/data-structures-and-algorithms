@@ -1,22 +1,15 @@
 'use strict';
 
-function kthFromEnd(k) {
-  var index = this.length-1;
-  var current = this.head;
-  var previous = null;
+function kthFromEnd(LL, k) {
 
-  while (current) {
-    if (k === index) {
-      console.log(`found it: ${current.value}`);
-      return current;
-    }
-    var next = current.next;
-    current.next = previous;
-    previous = current;
-    current = next;
-    index--;
+  let reqEl = LL.length-1-k; 
+  let runner = LL.head;
+  
+  for (var i=0; i<reqEl; i++) {
+
+    runner = runner.next;
   }
+  return runner.value;
 }
-
 
 module.exports = kthFromEnd;

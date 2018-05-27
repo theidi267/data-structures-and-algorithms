@@ -29,13 +29,13 @@ class Node {
   }
 }
 
-var ll = new LinkedList();
+var testList = new LinkedList();
 
-ll.add(2);
-ll.add(3);
-ll.add(5);
-ll.add(7);
-ll.add(11);
-console.log(ll.kthFromEnd(0));
+testList.add(2);
+testList.add(3);
+testList.add(5);
+testList.add(7);
+testList.add(11);
+// console.log(testList);
 
-module.require = new LinkedList;
+module.exports = LinkedList;
