@@ -21,5 +21,5 @@ Input	Output	Internal State
 
 ## Solution
 
-![whiteboard8](example8.png)
+![whiteboard11](whiteboard11.jpg)
 
