@@ -1,7 +1,9 @@
 'use strict';
 
-class Species {
 
+// instead of this full blown app, just use filter of the queue so it is a full start over
+
+class Species {
   constructor(animal){
     let `` = new List();  // have to be able to reference which list
     speciesArray.push(animal);    
@@ -16,17 +18,11 @@ class Animal {
   }       
 }
 class AnimalShelter {
-
   var stamp = 0;
   let speciesArray = [];
   enqueue(animal) {
     let shelteredAnimal = new Species(animal);
-    if(speciesArray.includes(animal){
-      
-
-    }
-
-    
+    if(speciesArray.includes(animal){    
   }     
 }
 
