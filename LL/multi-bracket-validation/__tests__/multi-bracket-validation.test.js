@@ -1,18 +1,17 @@
-
 'use strict';
 
 let balancedBraces = require('../multi-bracket-validation.js');
 
 describe('Maches brackets in string, disregarding other content', () => {
-  it('balancedBraces({}{Code}[Fellows](()))', () => {
-    let outcome = balancedBraces('{}{Code}[Fellows](()))');
+  it('balancedBraces(ab[cd]{})', () => {
+    let outcome = balancedBraces('ab[cd]{}');
     expect(outcome).toEqual(true);
   });
 });
 
 describe('returns true if matched', () => {
   it('balancedBraces([(){}[[]])', () => {
-    let outcome  = balancedBraces('[(){}[[]]');
+    let outcome  = balancedBraces('(){}[[]]');
     expect(outcome ).toEqual(true);
   });
 });
