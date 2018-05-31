@@ -17,5 +17,4 @@ function balancedBraces(str) {
   return stack.length === 0;
 }
 
-
-balancedBraces('ab[cd]{}');
+module.exports = balancedBraces;
