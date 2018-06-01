@@ -26,3 +26,7 @@ Input	Output
 ## Solution
 
 ![whiteboard13](whiteboard13.jpg)
+
+## Collaboration
+
+We worked on this challenge with Jen, figured out the logic, but couldn't translate it to code. That is when we turned to the internet. Such a wonderful place that is.
