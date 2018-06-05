@@ -20,3 +20,7 @@ Write a function called breadthFirstTraversal which takes a Binary Tree as its u
 ## Collaboration
 
 On this lab, we worked with Khallil
+
+### Acknowlegement
+
+based on Vaidehi Joshi's explanation
