@@ -1,12 +1,11 @@
 'use strict';
 
-let Node = require ('../../TREES/Tree-constructor/constructor');
-let Tree = require ('../../TREES/Tree-constructor/constructor');
+let node = require ('../../../TREES/Tree-constructor/constructor');
+let tree = require ('../../../TREES/Tree-constructor/constructor');
 
 let ourFunction = require ('../fizzBuzzTree.js');
 
 describe ('FizzBuzz binary tree', () => {
-  let testTree = new Tree(one);
   let one = new Node(1),
     two = new Node(2),
     three = new Node(3),
@@ -14,6 +13,7 @@ describe ('FizzBuzz binary tree', () => {
     ten = new Node(10),
     twelve = new Node(12),
     fifteen = new Node(15);
+  let testTree = new Tree(one);
 
   one.left = two;
   one.right = three;

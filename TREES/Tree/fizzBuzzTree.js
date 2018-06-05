@@ -11,4 +11,4 @@ function fizzBuzzTree(tree) {
   fizzBuzzTree(root.right);
 }
 
-export default fizzBuzzTree;
+module.exports = fizzBuzzTree;
