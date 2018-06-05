@@ -1,7 +1,7 @@
 'use strict';
 
-let node = require ('../../../TREES/Tree-constructor/constructor');
-let tree = require ('../../../TREES/Tree-constructor/constructor');
+let Node = require ('../../../TREES/Tree-constructor/constructor.js');
+let Tree = require ('../../../TREES/Tree-constructor/constructor.js');
 
 let ourFunction = require ('../fizzBuzzTree.js');
 
@@ -13,7 +13,7 @@ describe ('FizzBuzz binary tree', () => {
     ten = new Node(10),
     twelve = new Node(12),
     fifteen = new Node(15);
-  let testTree = new Tree(one);
+  let testTree = new Tree(one);  //eslint-disable-line
 
   one.left = two;
   one.right = three;
