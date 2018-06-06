@@ -1,7 +1,7 @@
 'use strict';
 
-let Node = require ('../../../TREES/Tree-constructor/constructor.js');
-let Tree = require ('../../../TREES/Tree-constructor/constructor.js');
+let Node = require ('../../Tree-constructor/binary-node.js');
+let Tree = require ('../../Tree-constructor/binary-tree.js');
 
 let ourFunction = require ('../fizzBuzzTree.js');
 
@@ -25,7 +25,7 @@ describe ('FizzBuzz binary tree', () => {
 
   let tree = testTree;
   ourFunction(tree);
-  expect(one.right.value).toEqual('Fizz');
+  expect(three.value).toEqual('Fizz');
   expect(three.right.value).toEqual('FizzBuzz');
   expect(two.left.value).toEqual('Buzz');  
 });
