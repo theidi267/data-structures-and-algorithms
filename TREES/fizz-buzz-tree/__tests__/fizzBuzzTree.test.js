@@ -23,9 +23,23 @@ describe ('FizzBuzz binary tree', () => {
   three.right = fifteen; 
 
 
-  let tree = testTree;
-  ourFunction(tree);
-  expect(three.value).toEqual('Fizz');
-  expect(three.right.value).toEqual('FizzBuzz');
-  expect(two.left.value).toEqual('Buzz');  
+  it('changes the 3 and 12 to Fizz', () => {
+    let tree = testTree;
+    ourFunction(tree);
+    expect(three.value).toEqual('Fizz');
+    expect(twelve.value).toEqual('Fizz');
+  });
+  
+  it('changes the 5 and 10 to Buzz', () => {
+    let tree = testTree;
+    ourFunction(tree);
+    expect(two.left.value).toEqual('Buzz');
+    expect(ten.value).toEqual('Buzz'); 
+  });
+  
+  it('changes the 15 to FizzBuzz', () => {
+    let tree = testTree;
+    ourFunction(tree);
+    expect(three.right.value).toEqual('FizzBuzz');
+  }); 
 });

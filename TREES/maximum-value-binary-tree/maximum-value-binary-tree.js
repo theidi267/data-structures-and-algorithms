@@ -6,7 +6,7 @@ const findMaxValue = (tree) => {
     return undefined;
   }
  
-  let max = 0;
+  let max = tree.root.value;
 
   const preOrderTraversal = (rootNode) => {
     if (!rootNode) {
@@ -20,13 +20,11 @@ const findMaxValue = (tree) => {
     preOrderTraversal(rootNode.left);
     preOrderTraversal(rootNode.right);
 
-    return undefined;
-   
+    return undefined;   
   };
 
   preOrderTraversal(tree.root);
   return max;
 };
 
-
-module.exports = maxValueTree;
+module.exports = findMaxValue;
