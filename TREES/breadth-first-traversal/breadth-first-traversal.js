@@ -67,7 +67,7 @@ function breadthFirstTrav(tree){
     }
     console.log(rootNode);
   
-    let thisQueue = new Queue();
+    let thisQueue = [];
     thisQueue.enqueue(rootNode);
   
     while (thisQueue) {
