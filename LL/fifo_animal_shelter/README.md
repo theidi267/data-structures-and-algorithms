@@ -22,7 +22,7 @@ Input	                Output	          Internal State
 
 ## Solution
 
-![whiteboard12](fifoshelter.jpg)
+![whiteboard12](asset/fifoshelter.jpg)
 
 ## Collaboration
 
