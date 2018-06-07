@@ -1,6 +1,6 @@
 # Interview Whiteboards
 
-- Paires with Khallil
+- Paired with Khallil
 
 ### Friday, June 1st
 
