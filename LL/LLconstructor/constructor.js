@@ -1,5 +1,13 @@
 'use stict';
 
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
 class LinkedList {
   constructor() {
     this.head = null;
@@ -20,22 +28,21 @@ class LinkedList {
       this.length++;
     }
   }
-}
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
+  append(value) { 
+
+    let node = new Node(value);   
+    if(! this.head) {
+      this.head = node;
+      return this;
+    }    
+    let currentNode = this.head; 
+    while(currentNode.next) {
+      currentNode = currentNode.next;
+    }
+    currentNode.next = node;
+    return this;
   }
 }
-
-var testList = new LinkedList();
-
-testList.add(2);
-testList.add(3);
-testList.add(5);
-testList.add(7);
-testList.add(11);
-// console.log(testList);
 
 module.exports = LinkedList;
