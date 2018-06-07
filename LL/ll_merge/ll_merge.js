@@ -1,17 +1,21 @@
 'use strict';
 
+let LinkedList = require('../LLconstructor/constructor.js');
+
 function mergeList(ll1, ll2) {
-  var LLcoolJ = new LL();
+  var LLcoolJ = new LinkedList();
   var currentNode1 = ll1.head;
   var currentNode2 = ll2.head;
 
   while (currentNode1 || currentNode2) {
     LLcoolJ.append(currentNode1.value);
     currentNode1 = currentNode1.next; 
+    LLcoolJ.length++; 
     LLcoolJ.append(currentNode2.value);
-    currentNode2 = currentNode2.next;    
+    currentNode2 = currentNode2.next;  
+    LLcoolJ.length++;  
   }
   return LLcoolJ;
 } 
 
-mergeList();
+module.exports = mergeList;

@@ -1,56 +1,41 @@
-class LinkedList {
-  constructor() {
-    this.head = null;
-    this.length = 0;
-  }
+'use strict';
 
-  add(value) {
-    var node = new Node(value);
-    if (this.head == null) {
-      this.head = node;
-      this.length++;
-    } else {
-      var current = this.head;
-      while (current.next) {
-        current = current.next;
-      }
-      current.next = node;
-      this.length++;
-    }
-  }
-  
-  kthFromEnd(k) {
+let ourfunction = require('../ll_merge.js');
+let LinkedList = require('../../LLconstructor/constructor.js');
 
-    if (k > this.length) return 'Exception';
-    var index = this.length-1;
-    var current = this.head;
-    var previous = null;
+describe('Merges two linked lists', () => {
 
-    while (current) {
-      if (k === index) {
-        console.log(`found it: ${current.value}`);
-        return current;
-      }
-      var next = current.next;
-      current.next = previous;
-      previous = current;
-      current = next;
-      index--;
-    }
-  }
-}
+  let testListOne = new LinkedList();    
+  testListOne.add(2);
+  testListOne.add(4);
+  testListOne.add(6);
+  testListOne.add(8);
+  testListOne.add(10);
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
+  let testListTwo = new LinkedList();    
+  testListTwo.add(1);
+  testListTwo.add(3);
+  testListTwo.add(5);
+  testListTwo.add(7);
+  testListTwo.add(11);
 
-var ll = new LinkedList();
+  it('Merges lists', () => {
 
-ll.add(3);
-ll.add(2);
-ll.add(7);
-ll.add(9);
-console.log(ll.kthFromEnd(0));
+    let result = ourfunction(testListTwo, testListOne);  
+    console.log('merged list', result);
+
+    expect(result.length).toEqual(10);
+  });
+
+  it('Merges alternating from both input lists', () => {
+   
+    let result = ourfunction(testListTwo, testListOne);
+    expect(result.head.next.next.value).toEqual(3);
+  });
+
+  it('Merges alternating from both input lists', () => {
+   
+    let result = ourfunction(testListTwo, testListOne);
+    expect(result.head.next.next.next.value).toEqual(4);
+  });
+});
