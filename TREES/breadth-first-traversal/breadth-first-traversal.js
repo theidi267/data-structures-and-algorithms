@@ -13,7 +13,7 @@ class Node {
     this.right = right;
   }
 }
-class Queue {
+class Queue { //eslint-disable-line
   constructor(){
     this.old = 0;
     this.new = 0;
@@ -52,9 +52,9 @@ four.right = null;
 
 // console.log(testTree.root);
 
-var rootNode = testTree.root;
+var rootNode = testTree.root; //eslint-disable-line
 
-function breadthFirstTrav(tree){
+function breadthFirstTrav(tree){ //eslint-disable-line
 
   var rootNode = testTree.root;
 
