@@ -3,7 +3,7 @@
 class Species {
 
   constructor(animal){
-    let `` = new List();  // have to be able to reference which list
+    let `` = new List();  //eslint-disable-line
     speciesArray.push(animal);    
     taxon.push(new Animal(animal));
   }
@@ -17,16 +17,12 @@ class Animal {
 }
 class AnimalShelter {
 
-  var stamp = 0;
+  var stamp = 0; //eslint-disable-line
   let speciesArray = [];
   enqueue(animal) {
     let shelteredAnimal = new Species(animal);
-    if(speciesArray.includes(animal){
+    if(speciesArray.includes(animal){//eslint-disable-line 
       
 
-    }
-
-    
-  }     
-}
-
+    }    
+  }   

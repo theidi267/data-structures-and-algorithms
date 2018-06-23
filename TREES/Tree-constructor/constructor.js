@@ -14,3 +14,6 @@ class Node {
     this.right = right;
   }
 }
+
+module.exports = BinaryTree;
+module.exports = Node;
