@@ -1,5 +1,7 @@
 'use strict';
 
+let Queue = require('../../Queue/queue.js');
+
 class BinaryTree {
 
   constructor(root = null) {
@@ -13,13 +15,7 @@ class Node {
     this.right = right;
   }
 }
-class Queue { //eslint-disable-line
-  constructor(){
-    this.old = 0;
-    this.new = 0;
-    this.data = {};
-  }
-} 
+
 let two = new Node(2),
   seven = new Node(7),
   secondtwo = new Node(2),
