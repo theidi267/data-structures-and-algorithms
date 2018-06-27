@@ -28,7 +28,7 @@ class Hashmap {
    * @param key
    * @return {string}
    */
-  get(key) {
+  get(key) { //eslint-disable-line
 
   }
 
@@ -36,7 +36,7 @@ class Hashmap {
    * Delete a key from the map
    * @param key
    */
-  delete(key) {
+  delete(key) { //eslint-disable-line
 
   }
 
@@ -45,7 +45,7 @@ class Hashmap {
    * @param key
    * @param newValue
    */
-  update(key,newValue) {
+  update(key,newValue) { //eslint-disable-line
 
   }
 
