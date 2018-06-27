@@ -16,7 +16,7 @@ Examples:
 
 ## Solution
 
-![whiteboard33.](assets/whiteboard33..jpg)
+![whiteboard33.](assets/whiteboard33.jpg)
 
 ## Collaboration
 
