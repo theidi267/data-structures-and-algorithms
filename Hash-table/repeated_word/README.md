@@ -12,7 +12,7 @@ Without utilizing any of the built-in library methods available to your language
 
 ## Solution
 
-![whiteboard131](assets/whiteboard31.jpg)
+![whiteboard31](assets/whiteboard31.jpg)
 
 ## Collaboration
 
