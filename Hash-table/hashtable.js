@@ -1,42 +1,46 @@
 'use strict';
+
 const util = require('util');
+const hash = require('string-hash');
+const LL = require('../LL/LLconstructor/constructor.js');
 
 class Hashmap {
 
-  constructor(size) {
-    this.size = size;
-    this.map = new Array(size);
+  constructor() {
+    this.length = 0;
+    this.map = (() => {
+      let ll = new LL();
+      return ll;
+    }) ();
   }
 
-  hash(key) {
-    return key.split('').reduce((p, n) => p + n.charCodeAt(0), 0) % this.size;
+  add(key, value) {
+
+    this.map.append({key:hash(key), value:{name:key, position: value}});
+    this.length++;
+    return this;
   }
 
-  set(key,value) {
-    let hash = this.hash(key);
-    console.log(hash, key, value);
 
-    // Please use a LL instead of an array!
-    if(! this.map[hash] ) { this.map[hash] = []; }
 
-    // We used an object here, but this could be anything...
-    this.map[hash].push({[key]:value});
+  get(key) {
+
+    let currentNode = this.map.head;
+    while(currentNode) {
+      if (currentNode.value.key === hash(key)) {
+        return currentNode.value;
+      }
+      currentNode = currentNode.next;
+    }
+    return undefined;
   }
 
-  /**
-   * Find a key in the hashmap and return its value
-   * @param key
-   * @return {string}
-   */
-  get(key) { //eslint-disable-line
-
-  }
-
-  /**
+  /**s
    * Delete a key from the map
    * @param key
    */
   delete(key) { //eslint-disable-line
+
 
   }
 
@@ -50,29 +54,29 @@ class Hashmap {
   }
 
   serialize() {
-
+    return this.map.serialize();
   }
 
-  deserialize() {
-
+  deserialize(data) {
+    return JSON.parse(JSON.stringify(data));
   }
 
 }
 
-let myhash = new Hashmap(14);
-myhash.set('John','Boss');
-myhash.set('Cathy','The Real Boss');
-myhash.set('Zach','Kid 1');
-myhash.set('Allie','Kid 2');
-myhash.set('Rosie','Dog');
-myhash.set('Cat','TA');
-myhash.set('Justin','Student');
-myhash.set('Jason','Student');
-myhash.set('Ben','Student');
-myhash.set('Timea','Student');
-myhash.set('Jen','Student');
-myhash.set('Khalil','Student');
-myhash.set('Michael','Student');
-myhash.set('Ovi','Student');
+let myhash = new Hashmap();
+myhash.add('John','Boss');
+myhash.add('Cathy','The Real Boss');
+myhash.add('Zach','Kid 1');
+myhash.add('Allie','Kid 2');
+myhash.add('Rosie','Dog');
+myhash.add('Cat','TA');
+myhash.add('Justin','Student');
+myhash.add('Jason','Student');
+myhash.add('Ben','Student');
+myhash.add('Timea','Student');
+myhash.add('Jen','Student');
+myhash.add('Khalil','Student');
+myhash.add('Michael','Student');
+myhash.add('Ovi','Student');
 
 console.log(util.inspect(myhash,{showHidden:false,depth:null}));

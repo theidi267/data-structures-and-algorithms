@@ -1,5 +1,7 @@
 # Left Join
 
+[![Build Status](https://travis-ci.com/theidi267/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/theidi267/data-structures-and-algorithms)
+
 ## Challenge
 
 Write a function that LEFT JOINs two hashmaps into a single data structure.
@@ -16,7 +18,7 @@ Examples:
 
 ## Solution
 
-![whiteboard33.](assets/whiteboard33..jpg)
+![whiteboard33.](assets/whiteboard33.jpg)
 
 ## Collaboration
 

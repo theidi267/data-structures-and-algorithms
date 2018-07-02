@@ -34,6 +34,7 @@ class LinkedList {
     let node = new Node(value);   
     if(! this.head) {
       this.head = node;
+      this.length++;
       return this;
     }    
     let currentNode = this.head; 
@@ -41,6 +42,7 @@ class LinkedList {
       currentNode = currentNode.next;
     }
     currentNode.next = node;
+    this.length++;
     return this;
   }
 }
