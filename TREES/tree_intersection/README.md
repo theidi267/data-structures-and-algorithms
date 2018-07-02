@@ -1,5 +1,7 @@
 # Tree Intersection
 
+[![Build Status](https://travis-ci.com/theidi267/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/theidi267/data-structures-and-algorithms)
+
 ## Challenge
 
 Write a function called tree_intersection that takes two binary tree parameters.

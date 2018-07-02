@@ -1,5 +1,7 @@
 # Repeating Word
 
+[![Build Status](https://travis-ci.com/theidi267/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/theidi267/data-structures-and-algorithms)
+
 ## Challenge
 
 Write a function that accepts a lengthy string parameter.
