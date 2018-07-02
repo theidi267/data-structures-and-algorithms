@@ -22,6 +22,7 @@ class Hashmap {
   }
 
 
+
   get(key) {
 
     let currentNode = this.map.head;
@@ -38,7 +39,8 @@ class Hashmap {
    * Delete a key from the map
    * @param key
    */
-  delete(key) { // eslint-disable-line
+  delete(key) { //eslint-disable-line
+
 
   }
 
@@ -47,7 +49,7 @@ class Hashmap {
    * @param key
    * @param newValue
    */
-  update(key,newValue) { // eslint-disable-line
+  update(key,newValue) { //eslint-disable-line
 
   }
 
