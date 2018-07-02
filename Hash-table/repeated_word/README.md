@@ -1,4 +1,5 @@
 # Repeating Word
+
 ## Challenge
 
 Write a function that accepts a lengthy string parameter.
@@ -16,3 +17,4 @@ Without utilizing any of the built-in library methods available to your language
 
 ## Collaboration
 
+worked on Hash-tables with Ovi
