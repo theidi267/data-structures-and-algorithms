@@ -1,12 +1,13 @@
 # Hash Table Implementation
 
+[![Build Status](https://travis-ci.com/theidi267/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/theidi267/data-structures-and-algorithms)
+
 
 ## Overview
 
 The hash function we choose should:
 
-Take a string as its input and return a number between 0 and m, our desired bucket array length.
-Return an even distribution of bucket indexes for an average set of inputs. If our hash function is unevenly distributed, it will put more items in some buckets than others. 
+Implementation of a hash-map, for hashing data we used the ```string-hash Node module```. 
 
 
 ## Algorithm
@@ -32,7 +33,16 @@ A number of prototype functions were created for the Hashmap class, two examples
 
 ```get(key)``` search the map
 
+```delete(key)``` deletes itnode from map
 
+```update(key, newValue)``` updates the "position" value of a node
+
+```serialize()``` and ```deserialize(data) ```
+
+
+## Tests
+
+Tests are conducted with ```Jest```, every function has 3 tests, including edge-cases.
 
 ## Collaboration
 

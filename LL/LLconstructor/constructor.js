@@ -45,6 +45,27 @@ class LinkedList {
     this.length++;
     return this;
   }
+
+  remove(value){ // Big O(1)
+    if (this.head.value === value){
+      this.head = this.head.next;
+      this.length--;
+    }
+    let prevNode = this.head;
+    let currentNode = this.head.next;
+    while(currentNode){
+      if(currentNode.value === value){
+        prevNode.next = currentNode.next;
+        currentNode = currentNode.next;
+        this.length--;
+        break;
+      }
+      prevNode = currentNode;
+      currentNode = currentNode.next;
+    }
+    return this;
+  }
+
 }
 
 module.exports = LinkedList;
