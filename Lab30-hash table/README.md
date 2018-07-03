@@ -1,5 +1,7 @@
 # Hash Table Implementation
 
+[![Build Status](https://travis-ci.com/theidi267/data-structures-and-algorithms.svg?branch=master)](https://travis-ci.com/theidi267/data-structures-and-algorithms)
+
 
 ## Overview
 
