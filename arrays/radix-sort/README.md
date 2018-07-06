@@ -18,4 +18,4 @@ Write a function that accepts an array of positive integers, and returns an arra
 
 ## Collaboration
 
-worked with Jason, Michael and the internet
+worked with Justin, Ovi and the internet
