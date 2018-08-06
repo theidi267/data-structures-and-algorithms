@@ -6,7 +6,7 @@ Without utilizing any of the built-in methods available to your language, determ
 
 ## Solution
 
-![whiteboard15](whiteboard15.jpg)
+![whiteboard15](./assets/whiteboard15.jpg)
 
 ## Collaboration
 
